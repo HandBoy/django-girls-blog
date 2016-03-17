@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for p in posts %}
+        {{ p.title }}
+        {{ p.published_date }}
+        {{ p.author.username }}
+    {% endfor %}
+</body>
+</html>
